@@ -7,11 +7,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Mirror the gitee/edgegallery org repos to github/EdgeGallery.
+    - name: Mirror the gitee/openharmony org repos to github/openharmony-gitee-mirror.
       uses: Yikun/hub-mirror-action@master
       with:
-        src: gitee/edgegallery
-        dst: github/EdgeGallery
+        src: gitee/openharmony
+        dst: github/openharmony-gitee-mirror
         dst_key: ${{ secrets.SYNC_EG_PRIVATE_KEY }}
         dst_token:  ${{ secrets.SYNC_EG_TOKEN }}
         #static_list: 'installer'

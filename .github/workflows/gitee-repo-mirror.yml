@@ -2,7 +2,7 @@ name: OpenHarmony gitee repos mirror periodic job
 on:
   schedule:
     # Runs at 20:00 UTC (4:00 AM Beijing) every day
-    - cron:  '35 4 * * *'
+    - cron:  '* */2 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest

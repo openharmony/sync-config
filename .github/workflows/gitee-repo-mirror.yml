@@ -8,10 +8,6 @@ on:
       - humen_api_trigger
   workflow_dispatch:
     inputs:
-      name:
-        description: 'Person to trigger'
-        required: true
-        default: 'Mona the Octocat'
 jobs:
   build:
     runs-on: ubuntu-latest

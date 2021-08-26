@@ -3,6 +3,15 @@ on:
   schedule:
     # Runs at 20:00 UTC (4:00 AM Beijing) every day
     - cron:  '*/5 * * * *'
+  repository_dispatch:
+    types:
+      - humen_api_trigger
+  workflow_dispatch:
+    inputs:
+      name:
+        description: 'Person to trigger'
+        required: true
+        default: 'Mona the Octocat'
 jobs:
   build:
     runs-on: ubuntu-latest

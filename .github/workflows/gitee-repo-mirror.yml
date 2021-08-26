@@ -7,7 +7,7 @@ on:
     types:
       - humen_api_trigger
   workflow_dispatch:
-    inputs:
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -24,3 +24,4 @@ jobs:
         clone_style: ssh
         force_update: true
         black_list: "community"
+        timeout: 2h

@@ -1,4 +1,4 @@
-name: EdgeGallery gitee repos mirror periodic job
+name: OpenHarmony gitee repos mirror periodic job
 on:
   schedule:
     # Runs at 20:00 UTC (4:00 AM Beijing) every day

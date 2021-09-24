@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Mirror the gitee/openharmony org repos to github/openharmony-gitee-mirror.
-      uses: Yikun/hub-mirror-action@master
+      uses: OpenHarmonySCM-noreply/hub-mirror-action@master
       with:
         src: gitee/openharmony
         dst: github/openharmony
